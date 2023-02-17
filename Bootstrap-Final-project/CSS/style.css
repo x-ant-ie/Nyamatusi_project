@@ -1,0 +1,899 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+
+ 
+ .menu {
+   display: flex;
+   cursor: pointer;
+   position: relative;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 8px;
+   transition: 0.8s; 
+
+ }
+ 
+ .bar1, .bar2, .bar3 {
+   width: 35px;
+   height: 2px;
+   background-color:white;
+   transition: 0.4s;
+ }
+
+ .bar2{width: 30px;}
+
+ .bar3{width: 20px;}
+ 
+ #myNav{
+   display: none;
+   transition: 0.8s; 
+
+ }
+
+
+.navbar .brand{
+    font-family: papyrus;
+    color: red;
+    font-size: 30px;
+ }
+
+
+
+   .navbar{
+      position: absolute;
+      width: 100%;
+      border-bottom: white 1px solid;
+      color: black;
+      padding-top: 20px;
+   }
+
+
+   .navbar-links ul{
+      display: flex;
+      gap: 20px;
+    }
+   
+   .navbar-links li{
+      list-style: none;
+   }
+   
+   .navbar-links li a{
+      text-decoration: none;
+      color:rgba(255, 255, 255, 0.743);
+      font-size: 18px;
+     
+    }
+   
+    .navbar a:hover{
+      color: red;
+      }
+  
+
+      /* The Overlay (background) */
+ .overlay {
+   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+   height: 100vh;
+   width:100%;
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   background-color: rgb(0,0,0); /* Black fallback color */
+   background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   transition: 0.8s; 
+ }
+ 
+ /* Position the content inside the overlay */
+ .overlay-content {
+   position: relative;
+   top: 25%; /* 25% from the top */
+   width: 100%; /* 100% width */
+   text-align: center; /* Centered text/links */
+   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+   transition: 0.8s; 
+
+ }
+ 
+ /* The navigation links inside the overlay */
+ .overlay a {
+   padding: 8px;
+   text-decoration: none;
+   font-size: 36px;
+   color: #818181;
+   display: block; /* Display block instead of inline */
+   transition: 0.3s; /* Transition effects on hover (color) */
+ }
+ 
+ /* When you mouse over the navigation links, change their color */
+ .overlay a:hover, .overlay a:focus {
+   color: #f1f1f1;
+ }
+ 
+ /* Position the close button (top right corner) */
+ .overlay .closebtn {
+   position: absolute;
+   right: 50px;
+   font-size: 60px;
+
+ }
+ 
+
+
+
+ .hero{
+    background-image: url(../images/banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+ }
+
+
+ .hero h1 {
+   padding-top: 210px;
+   font-size: 140px;
+}
+
+ 
+.hero .icons ,.hero2 .icons {
+   position: relative;
+   display: flex;
+   justify-content:flex-end;
+   align-items: flex-end;
+    flex-direction: column;
+   width: 100%;
+   bottom: 70px ;
+   left: 20px;
+   gap: 40px;
+ }
+
+
+
+.hero .drop-down {
+   position: relative;
+   left: 600px;
+   top: 100px;
+   animation: bounce 0.9s infinite;
+  }
+
+ @keyframes bounce{
+     50%{transform: translateY(40px); }
+ 
+  }
+
+
+
+.hero .icons img{
+   height: 25px;
+}
+
+ .hero2{display: none;}
+
+
+
+ .hero2 {
+   background-image: url(../images/banner2.jpg);
+   width:100%;
+   height: 100vh;
+   background-position: center;
+   background-size: cover;
+ }
+
+
+.hero2 h1 {
+   padding-top: 330px;
+   font-size: 120px;
+ }
+
+ .hero2 span{
+   font-weight:bolder;
+   font-size: 140px;
+ }
+
+ .hero2 .icons{
+   bottom:220px;
+
+ }
+
+
+.hero2 .icons img{
+   height: 22px;
+ }
+ 
+
+.hero2 .drop-down {
+   position: relative;
+   left: 300px;
+   top: 80px;
+   animation: bounce 0.9s infinite;
+  }
+
+
+
+
+
+ .story p{
+    margin-top: 100px ;
+    
+ }
+
+ .story-div1 button{
+  background-color: #e75317;
+  border: none;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-size: 22px;
+   margin-top: 20px;
+ }
+ .story h3{
+     margin-bottom: 20px ;
+  }
+
+ .story-div2{
+    padding-top: 100px;   
+ }
+
+ .story-div3{
+   display: grid;
+   gap: 25px;
+   padding-top: 50px;
+ }
+
+ .story {
+   margin-top: 100px;
+ }
+
+ .story .row{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .activities .maindiv{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    color: white;
+    justify-content: space-evenly;
+     
+ }
+   
+ .act1{
+    background-image: url(../images/Rectangle\ 17.png);
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 400px;
+    
+ }
+ .act2{
+    background-image: url(../images/Rectangle\ 16.png);
+    width: 230px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+ }
+ .act3{
+    background-image: url(../images/Rectangle\ 18.png);
+    width: 230px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+ }
+ .act4{
+    background-image: url(../images/Rectangle\ 19.png);
+    width: 230px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+ }
+ .act5{
+    background-image: url(../images/Rectangle\ 20.png);
+    width: 230px;
+    height: 403px;
+    background-position: center;
+    background-size: cover;
+ }
+
+ .activities h3{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 119px;
+    margin-top: 120px;
+ }
+
+
+ .activities p{
+    font-size: 14px;
+ }
+
+
+ .activities .div1{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+ }
+ .activities .div2{
+    width:100%;
+    height: 400px;
+    background-color:rgba(0, 0, 0, 0.303);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+ }
+ 
+
+
+
+ .sightings-div {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+ 
+ .sightings h3{
+    padding-top: 150px;
+    padding-left: 10px;
+ }
+
+ .sightings p{
+   padding-top:80px;
+ }
+
+ .sightings .pic1{
+     padding-bottom: 120px;
+ }
+
+ .sightings .pic2{
+    padding-bottom: 10px;
+   }
+
+.sightings .pic3{
+    padding-bottom:250px;
+ }
+
+.sightings .div1{
+    position: relative;
+    padding-left: 120px;
+
+ }
+
+ .sightings  .div2{
+    position: relative;
+    display: flex;
+    bottom: 170px ;
+ }
+
+ .sightings .div3{
+    position: relative;
+    bottom: 80px;
+ }
+
+ 
+ .suggestions .card{
+    background-color: #e75317;
+    height: 450px;
+    width: 320px;
+    color: white;
+
+ }
+
+.suggestions .div1 img{
+    height: 450px;
+    width: 250px;
+ } 
+
+ .suggestions .maindiv{
+   display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: center;
+  }
+ 
+
+ .suggestions .div1{
+     display: flex;
+ }
+
+ .suggestions .div1 .image2{
+   height: 450px;
+    width: 280px;
+ }
+
+ .suggestions .div2{
+   display: flex;
+    gap: 20px;
+ }
+
+
+ .suggestions .rect1{
+    background-image: url(../images/Rectangle\ 36.png);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 320px;
+
+ }
+
+ .suggestions .rect2{
+    background-image: url(../images/Rectangle\ 37.png);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 320px;
+    
+ }
+
+ .suggestions h3{
+    padding-left: 110px;
+ }
+
+ .suggestions .opacity{
+    background-color: rgba(0, 0, 0, 0.516);
+    height: 450px;
+    width: 320px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    color: white;
+ }
+
+ .suggestions .rect1, .suggestions .rect2 h5{
+     font-style: italic;  
+ }
+ 
+
+ .suggestions .card h5{
+    font-size: 18px;
+    margin-top: 10px;
+ }
+
+ .suggestions .card p{
+    font-size: 15px;
+    font-weight:300;
+    margin-top: 30px;
+ }
+
+ .suggestions .card ul li{
+    font-size: 15px;
+    font-weight:300;
+ }
+
+ .suggestions .card .cost{
+   border-bottom: 1px solid;
+   border-top: 1px solid;
+   height: 40px;
+   width: 100%;
+   text-align:left;
+   padding: 5px 19px ;
+   margin-right: 20px ;
+   font-size: larger;
+   font-weight:bolder;
+   bottom: 50px;
+   position: relative;
+ }
+
+ .suggestions .card .sub-div{
+    padding: 25px;
+    padding-bottom: 70px;
+    
+ }
+
+ .suggestions .card .seemore{
+    padding-left: 30px;
+    bottom: 15px;
+    position: relative;
+ }
+
+.suggestions   .more img{
+    width: 25px;
+    position: relative;
+    height: 10px;
+    left: 260px;
+     bottom: 45px ; 
+ }
+
+
+
+ .testimonials-div{
+   justify-content: center;
+   gap: 50px;
+ }
+
+
+ .testimonials .pic1{
+    background-image: url(../images/Rectangle\ 46.png);
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 500px;
+ }
+
+
+ .testimonials .pic2{
+    background-image: url(../images/Rectangle\ 45.png);
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 500px;
+ }
+
+ .testimonials .card{
+    border: 1px solid #e75317;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+     text-align: center;
+ }
+
+ .testimonials .card .line{
+    height: 2px ;
+    width: 100px;
+    color: #e75317;
+   
+ }
+
+ .testimonials .card img{
+    height: 120px;
+    margin: 40px;
+ }
+
+ .testimonials .card p{
+    color: rgba(7, 7, 7, 0.778);
+    
+ }
+
+ .testimonials .card h5{
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 15px;
+ }
+ 
+
+ .testimonials h3{
+    padding: 20px 60px;
+    padding-top: 100px;
+ }
+
+ .testimonials .opacity1{
+    width:320px;
+    height: 500px;
+    background-color: #e752177b;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    color: white;
+    position: relative;
+    right: 12px;
+ }
+ 
+ .testimonials .opacity2{
+    width:320px;
+    height: 500px;
+    background-color: #e752176b;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    color: white;
+    position: relative;
+    right: 12px;
+ }
+
+ .gallery .car{
+    height: 320px;
+    bottom: 16px;
+    position: relative;
+   
+ }
+
+ .gallery .indoors{
+    width: 100%;
+    height: 284px;
+    
+}
+
+ 
+ 
+ .gallery h3{
+   padding-top: 100px;
+   padding-left: 40px;
+   margin: 60px 0;
+ }
+
+
+ footer{
+    background-color: #e75317;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+    padding-bottom: 0px;
+    flex-direction: column;
+ }
+ 
+ footer .line{
+    width: 100%;
+    height: 3px ;
+    background-color: white;
+    border: 1px solid white;
+     
+ }
+
+ footer .email-button{
+    height: 50px;
+    border: none;
+    width: 300px;
+    margin-top: 30px;
+    padding-left: 50px;
+    
+ }
+
+ footer .submit-button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: rgba(17, 16, 16, 0.798);
+    color: white;
+    margin-top: 30px;
+    font-style: italic;
+   font-size: 18px;
+ }
+
+ footer h5{
+    font-style: italic;
+    padding-bottom: 20px;
+ }
+
+
+
+
+
+
+
+ 
+ /* Medium devices (tablets, less than 992px) */
+
+ @media  (min-width:768px) and  (max-width: 991px) {
+
+ body{ background-color:grey; font-size: 20px;}
+
+ h3{padding-left: 60px;}
+
+ .navbar ul{display: none;}
+ 
+
+ .hero{display: none;}
+
+ .hero2{display: flex;}
+
+
+
+ .story-div1 h3{padding-right: 40px;}
+
+ .story-div3{display: flex; justify-content: center;}
+
+ .story-div2{padding: 10px 100px;margin-top: 60px;}
+
+ .story-div1{text-align: center;}
+
+ .story-div1 button{margin-top: 40px;}
+
+
+
+ .sightings .div1{padding: 0px 0px; }
+               
+ .sightings  .div2{ bottom: 30px ; }          
+
+ .sightings .div3{ position: relative;  bottom: 0px;}            
+           
+ .sightings .pic1{ padding-bottom: 20px;  }    
+        
+ .sightings .pic2{padding-top: 50px;  }           
+           
+ .sightings .pic3{ padding-bottom:20px; }          
+
+ .sightings-div {display: flex;flex-direction: column; flex-wrap: wrap;height: 50vh;}
+
+ .sightings h3{text-align: center;}
+
+
+   
+ .testimonials-div{gap: 20px;}
+
+ .testimonials .pic1,.testimonials .pic2{width: 200px;}      
+
+ .testimonials .opacity1,.testimonials .opacity2{width: 200px;}  
+     
+  .testimonials {justify-content: flex-start;text-align: center;}
+
+
+
+
+  .gallery .col-md-4{margin: 20px 0px;}
+
+  .gallery {text-align: center;}
+
+
+  .activities .maindiv{gap: 15px; display: flex;flex-direction: column; flex-wrap: wrap;height: 50vh; justify-content: center;align-items: center;overflow-x: scroll}
+
+  .activities h3{margin-left: 200px;}
+
+
+ .suggestions .div1{overflow-x: scroll;}
+
+ .suggestions .div2{margin-top: 50px;}
+
+ .suggestions .maindiv{flex-direction: column; gap: 0px; justify-content: center;align-items: center;}
+ 
+ .suggestions{margin-top: 50px;}
+
+ .suggestions h3{padding-left: 220px;}
+
+
+  footer p{font-size:16px;}
+
+  footer .div3, .div4{ margin-top: 20px;}
+
+  }
+
+ 
+ 
+ /* Small devices (landscape phones, less than 768px) */
+
+ @media (min-width:576px) and (max-width: 767px)  {
+
+  }
+
+
+
+ /* X-Small devices (portrait phones, less than 576px) */
+
+ @media (max-width: 575px) { 
+
+   body{background-color: red;}
+
+
+   .navbar ul{display: none;}
+
+   .navbar .brand{font-size: 20px;}
+
+   
+   .hero{display: none;}
+  
+   .hero2{display: flex;}
+
+   .hero2 h1, .hero2 span{font-size: 80px; text-align: center;padding-top: 220px;}
+
+   .hero2 .icons img{ height:25px;}
+
+   .hero2 .icons{justify-content:center;align-items: center;flex-direction: row;bottom: 0px; width:50%;left: 100px; }
+
+   .hero2 .drop-down{left: 140px;}
+  
+  /* 
+  
+   .story-div1 h3{padding-right: 40px;}
+  
+   .story-div3{display: flex; justify-content: center;flex-direction: column;align-items: center;}
+  
+   .story-div2{margin-top: 60px;}
+  
+   .story-div1 button{margin-top: 40px;}
+
+   .story{ display: flex; justify-content: center; align-items: center;text-align: center;}
+   
+ */
+
+
+
+
+ .story h3{margin-left: 130px; margin-bottom: 0%;}
+
+ .story-div3{display: flex; justify-content: center; flex-direction: column;margin-left: 20px;gap: 40px;}
+
+ .story-div2{margin-top: 0px;margin-left: 20px;}
+
+  .story-div1 button{margin-top: 40px;}
+
+  .story {margin-top: 60px;}
+
+  
+  
+  
+   .sightings .div1{padding: 0px 0px;}
+                 
+   .sightings  .div2{ bottom: 30px ; margin-top: 30px;justify-content:center;display: flex; }          
+  
+   .sightings .div3{ position: relative;top: -12px;justify-content:center;display: flex; }            
+             
+   .sightings .pic1{ padding-bottom: 20px;  }             
+             
+   .sightings .pic3{ padding-bottom:20px;padding-top: 10px; }         
+  
+  .sightings-div {flex-direction: column;align-items: center;justify-content:center;}
+
+  .sightings p{padding: 50px 0px;}
+
+  .sightings h3{ padding: 0px 0px; padding-top: 80px; }
+
+ .sightings{text-align: center;}
+  
+  
+    .gallery .col-md-4{margin: 20px 0px;}
+
+    .gallery .outdoor{margin-top: 20px;}
+
+     .gallery h3{padding: 0px 120px;}
+     
+     
+  
+  
+    .activities .maindiv{gap: 15px; display: flex;flex-direction: column; justify-content: center;align-items: center;}
+
+    .act1,.act2,.act3,.act4,.act5{width: 350px;}
+
+    .activities h3{margin-top: 50px;}
+  
+    
+  
+   
+   .suggestions .div2{margin-top: 0px; flex-direction: column;}
+
+   .suggestions .div1{flex-direction: column;justify-content: center; align-items: center;}
+  
+   .suggestions .maindiv{display: flex;flex-direction: column;  justify-content: center;align-items: center;}
+   
+   .suggestions{margin-top: 50px;}
+
+   .suggestions h3{padding-left: 90px;}
+
+
+
+  
+   .testimonials-div{gap: 10px;}
+
+   .testimonials .card{width:fit-content;}
+  
+   .testimonials .pic1,.testimonials .pic2{width: 300px;}      
+  
+   .testimonials .opacity1,.testimonials .opacity2{width: 300px;}  
+       
+   .testimonials {justify-content: center;align-items: center;}
+
+   .testimonials h3{ padding: 50px 140px;}
+  
+  
+  
+ 
+  
+   footer p{font-size:16px;}
+  
+   footer .div2, .div3, .div4{ margin-top: 20px;}
+ }
+
+
